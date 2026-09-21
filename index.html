@@ -1,0 +1,786 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Haji Salman Memon | Trader</title>
+  <meta name="description" content="Haji Salman Memon trading community. Join the Telegram channel for market updates and trading information.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Poppins:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- =========================
+       META PIXEL
+  ========================== -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {
+      if(f.fbq)return;
+
+      n=f.fbq=function(){
+        n.callMethod
+          ? n.callMethod.apply(n,arguments)
+          : n.queue.push(arguments)
+      };
+
+      if(!f._fbq)f._fbq=n;
+
+      n.push=n;
+      n.loaded=!0;
+      n.version='2.0';
+      n.queue=[];
+
+      t=b.createElement(e);
+      t.async=!0;
+      t.src=v;
+
+      s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)
+    }(
+      window,
+      document,
+      'script',
+      'https://connect.facebook.net/en_US/fbevents.js'
+    );
+
+    fbq('init', '1988729291844036');
+    fbq('track', 'PageView');
+  </script>
+
+  <noscript>
+    <img
+      height="1"
+      width="1"
+      style="display:none"
+      src="https://www.facebook.com/tr?id=1988729291844036&ev=PageView&noscript=1"
+      alt=""
+    >
+  </noscript>
+  <!-- END META PIXEL -->
+
+
+  <style>
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: "Poppins", sans-serif;
+      min-height: 100vh;
+      color: #ffffff;
+      background:
+        linear-gradient(
+          rgba(0,255,120,.025) 1px,
+          transparent 1px
+        ),
+        linear-gradient(
+          90deg,
+          rgba(0,255,120,.025) 1px,
+          transparent 1px
+        ),
+        radial-gradient(
+          circle at 50% 30%,
+          #08251d 0%,
+          #02090d 45%,
+          #010509 100%
+        );
+
+      background-size:
+        54px 54px,
+        54px 54px,
+        100% 100%;
+
+      overflow-x: hidden;
+    }
+
+
+    .box {
+      width: 100%;
+      max-width: 650px;
+      min-height: 100vh;
+      margin: auto;
+      padding: 38px 24px 30px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+
+      background: rgba(1,9,13,.60);
+      border-left: 1px solid rgba(255,255,255,.03);
+      border-right: 1px solid rgba(255,255,255,.03);
+    }
+
+
+    /* =========================
+       PROFILE
+    ========================== */
+
+    .profile {
+      width: 105px;
+      height: 105px;
+      display: block;
+      margin: 0 auto 22px;
+
+      object-fit: cover;
+      border-radius: 50%;
+
+      border: 3px solid #20e875;
+      padding: 3px;
+
+      background: #03120d;
+
+      box-shadow:
+        0 0 12px rgba(32,232,117,.50),
+        0 0 35px rgba(32,232,117,.15);
+    }
+
+
+    /* =========================
+       TOP TAG
+    ========================== */
+
+    .top-tag {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 9px;
+
+      padding: 9px 20px;
+
+      border: 1px solid rgba(46,255,128,.25);
+      border-radius: 30px;
+
+      background: rgba(10,40,30,.35);
+
+      color: #78d99a;
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 2.5px;
+
+      margin-bottom: 23px;
+    }
+
+
+    .green-dot {
+      width: 9px;
+      height: 9px;
+      flex-shrink: 0;
+
+      background: #18ff70;
+      border-radius: 50%;
+
+      box-shadow: 0 0 12px #18ff70;
+    }
+
+
+    /* =========================
+       TITLE
+    ========================== */
+
+    h1 {
+      font-family: "DM Serif Display", serif;
+      font-size: 60px;
+      font-weight: 400;
+      line-height: 1.05;
+
+      margin-bottom: 10px;
+    }
+
+
+    .subtitle {
+      color: #55b778;
+
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 5px;
+
+      margin-bottom: 22px;
+    }
+
+
+    .line {
+      width: 60px;
+      height: 3px;
+
+      margin: 0 auto 24px;
+
+      border-radius: 10px;
+
+      background: #20df6a;
+
+      box-shadow: 0 0 12px #20df6a;
+    }
+
+
+    /* =========================
+       GRAPH
+    ========================== */
+
+    .graph {
+      width: 100%;
+      height: 72px;
+
+      position: relative;
+
+      margin-bottom: 14px;
+      opacity: .9;
+    }
+
+
+    .graph svg {
+      width: 100%;
+      height: 100%;
+    }
+
+
+    .graph-line {
+      fill: none;
+      stroke: #35e978;
+      stroke-width: 2.5;
+
+      filter:
+        drop-shadow(
+          0 0 5px
+          rgba(53,233,120,.5)
+        );
+    }
+
+
+    /* =========================
+       DESCRIPTION
+    ========================== */
+
+    .description {
+      max-width: 520px;
+
+      margin: 0 auto 24px;
+
+      color: #899196;
+
+      font-size: 13px;
+      line-height: 1.8;
+    }
+
+
+    /* =========================
+       MARKET INFO
+    ========================== */
+
+    .market {
+      display: flex;
+      justify-content: center;
+      gap: 9px;
+
+      flex-wrap: wrap;
+
+      margin-bottom: 18px;
+    }
+
+
+    .market-box {
+      padding: 9px 13px;
+
+      border: 1px solid rgba(49,255,126,.18);
+      border-radius: 11px;
+
+      background: rgba(2,12,16,.80);
+
+      color: #81898d;
+
+      font-size: 11px;
+    }
+
+
+    .market-box span {
+      color: #52e986;
+      font-weight: 600;
+      margin-left: 3px;
+    }
+
+
+    .market-box.red span {
+      color: #ff6868;
+    }
+
+
+    /* =========================
+       CATEGORY CARDS
+    ========================== */
+
+    .cards {
+      display: flex;
+      justify-content: center;
+      gap: 7px;
+
+      flex-wrap: wrap;
+
+      margin: 18px 0 23px;
+    }
+
+
+    .card {
+      padding: 8px 12px;
+
+      border: 1px solid rgba(46,255,128,.17);
+      border-radius: 9px;
+
+      background: rgba(5,27,22,.72);
+
+      color: #70c58d;
+
+      font-size: 11px;
+    }
+
+
+    /* =========================
+       MAIN BUTTON
+    ========================== */
+
+    .btn {
+      width: 92%;
+      max-width: 430px;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 9px;
+
+      margin: 10px auto;
+
+      padding: 17px 15px;
+
+      border-radius: 15px;
+
+      text-decoration: none;
+
+      font-size: 15px;
+      font-weight: 700;
+
+      color: #001b0c;
+
+      background:
+        linear-gradient(
+          135deg,
+          #19df69,
+          #13bd55
+        );
+
+      box-shadow:
+        0 0 20px rgba(0,255,100,.22),
+        0 8px 25px rgba(0,0,0,.35);
+
+      transition:
+        transform .2s ease,
+        box-shadow .2s ease,
+        filter .2s ease;
+    }
+
+
+    .btn:hover {
+      transform: translateY(-2px);
+
+      box-shadow:
+        0 0 27px rgba(0,255,100,.30),
+        0 10px 30px rgba(0,0,0,.40);
+
+      filter: brightness(1.05);
+    }
+
+
+    .btn:active {
+      transform: translateY(0) scale(.98);
+    }
+
+
+    /* =========================
+       SECOND BUTTON
+    ========================== */
+
+    .extra-btn {
+      width: 92%;
+      max-width: 430px;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+
+      margin: 12px auto 0;
+
+      padding: 14px 15px;
+
+      border-radius: 14px;
+
+      text-decoration: none;
+
+      font-size: 13px;
+      font-weight: 600;
+
+      color: #70d895;
+
+      background: rgba(5,25,20,.65);
+
+      border: 1px solid rgba(48,255,125,.24);
+
+      transition:
+        transform .2s ease,
+        background .2s ease;
+    }
+
+
+    .extra-btn:hover {
+      background: rgba(20,100,55,.25);
+      transform: translateY(-2px);
+    }
+
+
+    /* =========================
+       MANAGED BY
+    ========================== */
+
+    .dg-name {
+      margin-top: 23px;
+
+      color: #60696e;
+
+      font-size: 11px;
+    }
+
+
+    .dg-name a {
+      color: #42bd72;
+
+      text-decoration: none;
+
+      font-weight: 600;
+    }
+
+
+    .dg-name a:hover {
+      text-decoration: underline;
+    }
+
+
+    /* =========================
+       FOOTER
+    ========================== */
+
+    footer {
+      margin-top: 19px;
+
+      color: #596269;
+
+      font-size: 10px;
+      line-height: 1.6;
+    }
+
+
+    /* =========================
+       MOBILE
+    ========================== */
+
+    @media (max-width: 500px) {
+
+      .box {
+        padding: 28px 16px 23px;
+      }
+
+
+      .profile {
+        width: 90px;
+        height: 90px;
+
+        margin-bottom: 19px;
+      }
+
+
+      .top-tag {
+        padding: 8px 14px;
+
+        font-size: 9px;
+        letter-spacing: 1.8px;
+
+        margin-bottom: 21px;
+      }
+
+
+      h1 {
+        font-size: 45px;
+      }
+
+
+      .subtitle {
+        font-size: 9px;
+        letter-spacing: 4px;
+      }
+
+
+      .line {
+        margin-bottom: 20px;
+      }
+
+
+      .graph {
+        height: 62px;
+      }
+
+
+      .description {
+        font-size: 12px;
+        line-height: 1.75;
+      }
+
+
+      .market {
+        gap: 6px;
+      }
+
+
+      .market-box {
+        padding: 8px 10px;
+        font-size: 10px;
+      }
+
+
+      .cards {
+        gap: 5px;
+      }
+
+
+      .card {
+        padding: 7px 9px;
+        font-size: 10px;
+      }
+
+
+      .btn {
+        width: 96%;
+
+        padding: 16px 10px;
+
+        font-size: 14px;
+      }
+
+
+      .extra-btn {
+        width: 96%;
+
+        padding: 12px;
+
+        font-size: 11px;
+      }
+
+
+      .dg-name {
+        font-size: 10px;
+      }
+
+
+      footer {
+        font-size: 9px;
+      }
+    }
+
+  </style>
+</head>
+
+
+<body>
+
+  <main class="box">
+
+    <!-- PROFILE -->
+    <img
+      src="https://adil.adssetup.in/assets/profile2.jpg"
+      alt="Haji Salman Memon"
+      class="profile"
+      loading="eager"
+    >
+
+
+    <!-- TELEGRAM LABEL -->
+    <div class="top-tag">
+      <span class="green-dot"></span>
+      TELEGRAM CHANNEL · FREE
+    </div>
+
+
+    <!-- TITLE -->
+    <h1>HAJI SALMAN MEMON</h1>
+
+    <div class="subtitle">
+      TRADER
+    </div>
+
+    <div class="line"></div>
+
+
+    <!-- GRAPH -->
+    <div class="graph" aria-hidden="true">
+
+      <svg
+        viewBox="0 0 600 100"
+        preserveAspectRatio="none"
+      >
+
+        <path
+          class="graph-line"
+          d="M0,82 C100,65 160,58 240,48 C340,35 440,31 600,20"
+        />
+
+      </svg>
+
+    </div>
+
+
+    <!-- DESCRIPTION -->
+    <p class="description">
+      Trading community for market updates, educational content
+      and information related to NIFTY, BANKNIFTY and intraday markets.
+    </p>
+
+
+    <!-- MARKET INFO -->
+    <div class="market">
+
+      <div class="market-box">
+        NIFTY <span>23,842 ▲</span>
+      </div>
+
+      <div class="market-box">
+        BANKNIFTY <span>51,204 ▲</span>
+      </div>
+
+      <div class="market-box red">
+        SENSEX <span>78,502 ▼</span>
+      </div>
+
+    </div>
+
+
+    <!-- CATEGORIES -->
+    <div class="cards">
+
+      <div class="card">📈 Intraday</div>
+      <div class="card">🎯 Options</div>
+      <div class="card">📊 Swing</div>
+      <div class="card">⚡ Alerts</div>
+      <div class="card">🇮🇳 Telugu</div>
+
+    </div>
+
+
+    <!-- TELEGRAM BUTTON -->
+    <a
+      href="https://t.me/+1T_NFBeRqEFmOWI1"
+      class="btn telegram-btn"
+      target="_blank"
+      rel="noopener noreferrer"
+      data-event="TelegramClick"
+    >
+      ✈️ JOIN FREE ON TELEGRAM
+    </a>
+
+
+    <!-- SECOND TELEGRAM BUTTON -->
+    <a
+      href="https://t.me/+1T_NFBeRqEFmOWI1"
+      class="extra-btn telegram-btn"
+      target="_blank"
+      rel="noopener noreferrer"
+      data-event="TelegramClick"
+    >
+      📊 GET MARKET UPDATES →
+    </a>
+
+
+    <!-- MANAGED BY -->
+    <div class="dg-name">
+
+      Managed by
+
+      <a
+        href="https://t.me/+3XoqJNLxYHswNTc1"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        ADBUILDAGENCY 🚀
+      </a>
+
+    </div>
+
+
+    <!-- FOOTER -->
+    <footer>
+      Market information is for educational purposes only.
+      Trade responsibly.
+    </footer>
+
+  </main>
+
+
+  <!-- =========================
+       REAL USER CLICK TRACKING
+  ========================== -->
+
+  <script>
+
+    document.querySelectorAll('.telegram-btn').forEach(function(button) {
+
+      button.addEventListener('click', function() {
+
+        /*
+         * Fires only when a real visitor clicks
+         * the Telegram button.
+         */
+
+        if (typeof fbq === 'function') {
+
+          fbq(
+            'trackCustom',
+            'TelegramClick',
+            {
+              destination: 'Telegram',
+              button_text: this.innerText.trim()
+            }
+          );
+
+        }
+
+      });
+
+    });
+
+  </script>
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1388012629599085');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1388012629599085&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+</body>
+</html>
+```
